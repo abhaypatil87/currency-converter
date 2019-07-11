@@ -23,7 +23,7 @@ Want to contribute? Great! There are a few things in my to-do list for this app,
 
  - Write Test-Cases
  - Implement two-way conversion without, essentially making the 'reverse' feature unnecessary
- - Filter to the currency lists
+ - ~~Filter to the currency lists~~
 
 License
 ----
