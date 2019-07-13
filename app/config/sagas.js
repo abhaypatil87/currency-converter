@@ -10,7 +10,7 @@ import {
   CONVERSION_ERROR,
 } from '../actions/currencies';
 
-export const getLatestRate = currency => fetch(`http://fixer.handlebarlabs.com/latest?base=${currency}`);
+export const getLatestRate = currency => fetch(`https://api.exchangeratesapi.io/latest?base=${currency}`);
 
 const fetchLatestConversionRates = function* (action) {
   try {
