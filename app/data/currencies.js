@@ -1,129 +1,161 @@
 export default [{
     code: 'AUD',
-    text: 'Australian Dollar'
+    text: 'Australian Dollar',
+    country: 'Australia'
   },
   {
     code: 'BGN',
-    text: 'Bulgarian Lev'
+    text: 'Bulgarian Lev',
+    country: 'Bulgaria'
   },
   {
     code: 'BRL',
-    text: 'Brazilian Real'
+    text: 'Brazilian Real',
+    country: 'Brazil'
   },
   {
     code: 'CAD',
-    text: 'Canadian Dollar'
+    text: 'Canadian Dollar',
+    country: 'Canada'
   },
   {
     code: 'CHF',
-    text: 'Swiss Franc'
+    text: 'Swiss Franc',
+    country: 'Switzerland'
   },
   {
     code: 'CNY',
-    text: 'Chinese Yuan'
+    text: 'Chinese Yuan',
+    country: 'China'
   },
   {
     code: 'CZK',
-    text: 'Czech Republic Koruna'
+    text: 'Czech Republic Koruna',
+    country: 'Czech Republic'
   },
   {
     code: 'DKK',
-    text: 'Danish Krone'
+    text: 'Danish Krone',
+    country: 'Denmark'
   },
   {
     code: 'EUR',
-    text: 'Euro'
+    text: 'Euro',
+    country: ''
   },
   {
     code: 'GBP',
-    text: 'British Pound Sterling'
+    text: 'British Pound Sterling',
+    country: 'United Kingdom'
   },
   {
     code: 'HKD',
-    text: 'Hong Kong Dollar'
+    text: 'Hong Kong Dollar',
+    country: 'Hong Kong'
   },
   {
     code: 'HRK',
-    text: 'Croatian Kuna'
+    text: 'Croatian Kuna',
+    country: 'Croatia'
   },
   {
     code: 'HUF',
-    text: 'Hungarian Forint'
+    text: 'Hungarian Forint',
+    country: 'Hungary'
   },
   {
     code: 'IDR',
-    text: 'Indonesian Rupiah'
+    text: 'Indonesian Rupiah',
+    country: 'Indonesia'
   },
   {
     code: 'ILS',
-    text: 'Israeli New Sheqel'
+    text: 'Israeli New Sheqel',
+    country: 'Israel'
   },
   {
     code: 'INR',
-    text: 'Indian Rupee'
+    text: 'Indian Rupee',
+    country: 'India'
   },
   {
     code: 'JPY',
-    text: 'Japanese Yen'
+    text: 'Japanese Yen',
+    country: 'Japan'
   },
   {
     code: 'KRW',
-    text: 'South Korean Won'
+    text: 'South Korean Won',
+    country: 'South Korea'
   },
   {
     code: 'MXN',
-    text: 'Mexican Peso'
+    text: 'Mexican Peso',
+    country: 'Mexico'
   },
   {
     code: 'MYR',
-    text: 'Malaysian Ringgit'
+    text: 'Malaysian Ringgit',
+    country: 'Malaysia'
   },
   {
     code: 'NOK',
-    text: 'Norwegian Krone'
+    text: 'Norwegian Krone',
+    country: 'Norway'
   },
   {
     code: 'NZD',
-    text: 'New Zealand Dollar'
+    text: 'New Zealand Dollar',
+    country: 'New Zealand'
   },
   {
     code: 'PHP',
-    text: 'Philippine Peso'
+    text: 'Philippine Peso',
+    country: 'Philippines'
   },
   {
     code: 'PLN',
-    text: 'Polish Zloty'
+    text: 'Polish Zloty',
+    country: 'Poland'
   },
   {
     code: 'RON',
-    text: 'Romanian Leu'
+    text: 'Romanian Leu',
+    country: 'Romania'
   },
   {
     code: 'RUB',
-    text: 'Russian Ruble'
+    text: 'Russian Ruble',
+    country: 'Russia'
   },
   {
     code: 'SEK',
-    text: 'Swedish Krona'
+    text: 'Swedish Krona',
+    country: 'Sweden'
   },
   {
     code: 'SGD',
-    text: 'Singapore Dollar'
+    text: 'Singapore Dollar',
+    country: 'Singapore'
   },
   {
     code: 'THB',
-    text: 'Thai Baht'
+    text: 'Thai Baht',
+    country: 'Thailand'
   },
   {
     code: 'TRY',
-    text: 'Turkish Lira'
+    text: 'Turkish Lira',
+    country: 'Turkey'
   },
   {
     code: 'USD',
-    text: 'United States Dollar'
+    text: 'United States Dollar',
+    country: 'United States'
   },
   {
     code: 'ZAR',
-    text: 'South African Rand'
+    text: 'South African Rand',
+    country: 'South Africa'
   },
 ];
