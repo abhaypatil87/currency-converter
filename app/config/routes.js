@@ -8,6 +8,7 @@ import Home from '../screens/Home';
 import CurrencyList from '../screens/CurrencyList';
 import Options from '../screens/Options';
 import Themes from '../screens/Themes';
+import i18n from './i18n';
 
 const HomeStack = createStackNavigator(
   {
@@ -15,13 +16,12 @@ const HomeStack = createStackNavigator(
       screen: Home,
       navigationOptions: {
         header: () => null,
-        headerTitle: 'Home',
       },
     },
     Options: {
       screen: Options,
       navigationOptions: {
-        headerTitle: 'Options',
+        headerTitle: i18n.t('OPTIONS.OPTIONS'),
       },
     },
     Themes: {

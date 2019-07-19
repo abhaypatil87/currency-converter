@@ -9,6 +9,8 @@ import { InputWithButton } from '../components/TextInput';
 import { ClearButton } from '../components/Button';
 import { LastConverted } from '../components/Text';
 import { Header } from '../components/Header';
+import i18n from '../config/i18n';
+import * as Localization from 'expo-localization';
 
 import { swapCurrency, changeCurrencyAmount, getInitialConversionn } from '../actions/currencies';
 
@@ -27,6 +29,18 @@ class Home extends Component {
     currencyError: PropTypes.string,
   };
 
+  state = {
+    locale: Localization.locale,
+  };
+
+  setLocale = locale => {
+    this.setState({ locale });
+  };
+
+  t = (scope, options) => {
+    return i18n.t(scope, { locale: this.state.locale, ...options });
+  };
+
   componentWillMount() {
     this.props.dispatch(getInitialConversionn());
   }
@@ -37,11 +51,11 @@ class Home extends Component {
     }
   }
   handlePressBaseCurrency = () => {
-    this.props.navigation.navigate('CurrencyList', { title: 'Base Currency', type: 'base' });
+    this.props.navigation.navigate('CurrencyList', { title: i18n.t('BASE_CURRENCY'), type: 'base' });
   }
 
   handlePressQuoteCurrency = () => {
-    this.props.navigation.navigate('CurrencyList', { title: 'Quote Currency', type: 'quote' });
+    this.props.navigation.navigate('CurrencyList', { title: i18n.t('QUOTE_CURRENCY'), type: 'quote' });
   }
 
   handleTextChange = (amount) => {
@@ -62,7 +76,8 @@ class Home extends Component {
       quotePrice = '...';
     }
     return (
-      <Container backgroundColor={this.props.primaryColor}>
+      <Container
+        backgroundColor={this.props.primaryColor}>
         <StatusBar translucent={false} barStyle="light-content" />
         <Header
           onPress={this.handleOptionsPress}
@@ -91,7 +106,7 @@ class Home extends Component {
             conversionRate={this.props.conversionRate}
           />
           <ClearButton
-            text="Reverse"
+            text={i18n.t('HOME.REVERSE')}
             onPress={this.handleSwapCurrencies}
           />
         </KeyboardAvoidingView>
