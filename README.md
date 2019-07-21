@@ -24,6 +24,11 @@ Want to contribute? Great! There are a few things in my to-do list for this app,
  - Write Test-Cases
  - Implement two-way conversion without, essentially making the 'reverse' feature unnecessary
  - ~~Filter to the currency lists~~
+ - Localisation
+
+## Localisation
+20190721 - Added expo-localization package with the help of the command 'expo install expo-localization'.
+See more: [expo-localization](https://github.com/expo/expo/blob/master/docs/pages/versions/unversioned/sdk/localization.md)
 
 License
 ----
