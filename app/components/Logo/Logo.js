@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import {
   View, Text, Keyboard, Animated, Platform, StyleSheet,
 } from 'react-native';
-
+import i18n from '../../config/i18n';
 import styles from './styles';
 
 const ANIMATION_DURATION = 250;
@@ -97,7 +97,7 @@ class Logo extends Component {
             source={require('./images/logo.png')}
           />
         </Animated.View>
-        <Text style={styles.text}>Currency Converter</Text>
+        <Text style={styles.text}>{i18n.t('APPLICATION_NAME')}</Text>
       </View>
     );
   }

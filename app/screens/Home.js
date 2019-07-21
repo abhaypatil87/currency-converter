@@ -10,7 +10,6 @@ import { ClearButton } from '../components/Button';
 import { LastConverted } from '../components/Text';
 import { Header } from '../components/Header';
 import i18n from '../config/i18n';
-import * as Localization from 'expo-localization';
 
 import { swapCurrency, changeCurrencyAmount, getInitialConversionn } from '../actions/currencies';
 
@@ -27,18 +26,6 @@ class Home extends Component {
     primaryColor: PropTypes.string,
     alertWithType: PropTypes.func,
     currencyError: PropTypes.string,
-  };
-
-  state = {
-    locale: Localization.locale,
-  };
-
-  setLocale = locale => {
-    this.setState({ locale });
-  };
-
-  t = (scope, options) => {
-    return i18n.t(scope, { locale: this.state.locale, ...options });
   };
 
   componentWillMount() {

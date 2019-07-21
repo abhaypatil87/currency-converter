@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import { ScrollView, StatusBar, Linking } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { ListItem, Divider } from 'react-native-elements';
-
 import { connectAlert } from '../components/Alert';
+import i18n from '../config/i18n';
 
 const ICON_COLOUR = '#868686';
 const ICON_SIZE = 23;
@@ -16,7 +16,7 @@ class Options extends Component {
   };
 
   handleThemesPress = () => {
-    this.props.navigation.navigate('Themes', { title: 'Themes' });
+    this.props.navigation.navigate('Themes', { title: i18n.t('THEMES.THEMES') });
   };
 
   handleSitePress = () => {
@@ -30,7 +30,7 @@ class Options extends Component {
       <ScrollView>
         <StatusBar translucent={false} barStyle="default" />
         <ListItem
-          title="Themes"
+          title={i18n.t('THEMES.THEMES')}
           onPress={this.handleThemesPress}
           rightIcon={
             <Ionicons name="ios-arrow-forward" size={ICON_SIZE} color={ICON_COLOUR} />

@@ -1,15 +1,15 @@
 {
-    "APPLICAION_NAME": "Currency Converter",
+    "APPLICATION_NAME": "Währungsrechner",
     "HOME": {
-        "REVERSE": "Umkehren",
-        "HOME": "Einstiegsseite"
+        "REVERSE": "umkehren",
+        "HOME": "Home"
     },
     "OPTIONS": {
-        "OPTIONS": "Optionen"
+        "OPTIONS": "Auswahl"
     },
     "THEMES": {
-        "THEMES": "Themes"
+        "THEMES": "Motive"
     },
     "BASE_CURRENCY": "Basiswährung",
-    "QUOTE_CURRENCY": "Kurswährung"
+    "QUOTE_CURRENCY": "Notierungswährung"
 }

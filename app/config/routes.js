@@ -27,7 +27,7 @@ const HomeStack = createStackNavigator(
     Themes: {
       screen: Themes,
       navigationOptions: {
-        headerTitle: 'Themes',
+        headerTitle: i18n.t('THEMES.THEMES'),
       },
     },
   },
