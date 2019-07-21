@@ -1,0 +1,15 @@
+{
+    "APPLICATION_NAME": "Währungsrechner",
+    "HOME": {
+        "REVERSE": "umkehren",
+        "HOME": "Home"
+    },
+    "OPTIONS": {
+        "OPTIONS": "Auswahl"
+    },
+    "THEMES": {
+        "THEMES": "Motive"
+    },
+    "BASE_CURRENCY": "Basiswährung",
+    "QUOTE_CURRENCY": "Notierungswährung"
+}
