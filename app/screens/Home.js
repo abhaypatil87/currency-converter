@@ -10,10 +10,12 @@ import { ClearButton } from '../components/Button';
 import { LastConverted } from '../components/Text';
 import { Header } from '../components/Header';
 import i18n from '../config/i18n';
-
+import environment from '../config/environment';
+import async from 'async';
 import { swapCurrency, changeCurrencyAmount, getInitialConversionn } from '../actions/currencies';
 
 class Home extends Component {
+
   static propTypes = {
     navigation: PropTypes.object,
     dispatch: PropTypes.func,
@@ -28,10 +30,51 @@ class Home extends Component {
     currencyError: PropTypes.string,
   };
 
-  componentWillMount() {
-    this.props.dispatch(getInitialConversionn());
+  async componentDidMount() {
+    const self = this;
+    navigator.geolocation.getCurrentPosition(
+      position => {
+        try {
+          let latLongString = `${position.coords.latitude},${position.coords.longitude}`;
+          async.waterfall([
+            function fetchCurrentLocation(done) {
+              fetch(`${environment.reverseGeoCodingUrl}/REST/v1/locations/${latLongString}?o=json&incl=ciso2&key=Al7cSYGKwxRV2LalzuHcmjBsn0bworsB3WgPr537cp24oqbdlF_PIpy7fBtdUbiE`)
+                .then(function(response) {
+                  return response.json();
+                })
+                .then(locationJson => {
+                  done(null, locationJson.resourceSets[0].resources[0].address.countryRegionIso2);
+                })
+            },
+            function getCurrencyBasedOnLocation(location, done) {
+              fetch(`${environment.countryCurrencyUrl}//rest/v2/alpha?codes=${location}&fields=currencies`)
+                .then(function(response) {
+                  return response.json();
+                })
+                .then(parsedJson => {
+                  const localCurrency = parsedJson[0].currencies[0].code;
+                  self.props.dispatch(getInitialConversionn(localCurrency));
+                  done(null, localCurrency);
+                });
+            }
+          ],
+          function (error) {
+            if (error) {
+              throw new Error(error);
+            }
+          });
+        } catch(error) {
+          if (error) {
+            throw new Error(error);
+          }
+        }
+      }
+    );
   }
-
+  componentWillUnmount() {
+    // Do the unmounting. Reset location tracking
+    navigator.geolocation.stopObserving();
+  }
   componentWillReceiveProps(nextProps) {
     if (nextProps.currencyError && nextProps.currencyError !== this.props.currencyError) {
       this.props.alertWithType('error', 'Error', nextProps.currencyError);

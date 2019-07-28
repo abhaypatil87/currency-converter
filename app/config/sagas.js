@@ -1,6 +1,7 @@
 import {
   takeEvery, call, put, select,
 } from 'redux-saga/effects';
+import environment from './environment';
 
 import {
   CHANGE_BASE_CURRENCY,
@@ -10,7 +11,7 @@ import {
   CONVERSION_ERROR,
 } from '../actions/currencies';
 
-export const getLatestRate = currency => fetch(`https://api.exchangeratesapi.io/latest?base=${currency}`);
+export const getLatestRate = currency => fetch(`${environment.exchangeRatesUrl}/latest?base=${currency}`);
 
 const fetchLatestConversionRates = function* (action) {
   try {

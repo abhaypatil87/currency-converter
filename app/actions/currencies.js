@@ -25,6 +25,7 @@ export const changeQuoteCurrency = currency => ({
   currency: currency.code,
 });
 
-export const getInitialConversionn = () => ({
+export const getInitialConversionn = currency => ({
   type: GET_INITIAL_CONVERSION,
+  currency: currency,
 });
