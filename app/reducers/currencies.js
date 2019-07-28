@@ -9,7 +9,7 @@ import {
 } from '../actions/currencies';
 
 const initialState = {
-  baseCurrency: 'USD',
+  baseCurrency: 'EUR',
   quoteCurrency: 'GBP',
   amount: 100,
   conversions: {},
@@ -62,7 +62,8 @@ const reducer = (state = initialState, action) => {
     case GET_INITIAL_CONVERSION:
       return {
         ...state,
-        conversions: setConversions(state, { currency: state.baseCurrency }),
+        baseCurrency: action.currency,
+        conversions: setConversions(state, action),
       };
     case CONVERSION_ERROR:
       return {
