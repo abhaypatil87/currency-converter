@@ -38,7 +38,7 @@ class Home extends Component {
           let latLongString = `${position.coords.latitude},${position.coords.longitude}`;
           async.waterfall([
             function fetchCurrentLocation(done) {
-              fetch(`${environment.reverseGeoCodingUrl}/REST/v1/locations/${latLongString}?o=json&incl=ciso2&key=Al7cSYGKwxRV2LalzuHcmjBsn0bworsB3WgPr537cp24oqbdlF_PIpy7fBtdUbiE`)
+              fetch(`${environment.reverseGeoCodingUrl}/REST/v1/locations/${latLongString}?o=json&incl=ciso2&key=`)
                 .then(function(response) {
                   return response.json();
                 })
