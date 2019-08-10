@@ -5,11 +5,17 @@
         "HOME": "Home"
     },
     "OPTIONS": {
-        "OPTIONS": "Options"
+        "OPTIONS": "Opcje"
     },
     "THEMES": {
-        "THEMES": "Themes"
+        "THEMES": "Skórki",
+        "GREEN": "zielony",
+        "BLUE": "niebieski",
+        "PURPLE": "fioletowy",
+        "ORANGE": "pomarańczowy"
     },
-    "BASE_CURRENCY": "Base Currency",
-    "QUOTE_CURRENCY": "Quote Currency"
+    "SEARCH_CURRENCIES": "Search Currencies",
+    "BASE_CURRENCY": "waluta z",
+    "QUOTE_CURRENCY": "waluta do",
+    "LAST_UPTATED_DATE": "Last updated date"
 }

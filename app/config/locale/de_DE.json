@@ -8,8 +8,14 @@
         "OPTIONS": "Auswahl"
     },
     "THEMES": {
-        "THEMES": "Motive"
+        "THEMES": "Motive",
+        "GREEN": "Green",
+        "BLUE": "Blue",
+        "PURPLE": "Purple",
+        "ORANGE": "Orange"
     },
+    "SEARCH_CURRENCIES": "Search Currencies",
     "BASE_CURRENCY": "Basiswährung",
-    "QUOTE_CURRENCY": "Notierungswährung"
+    "QUOTE_CURRENCY": "Notierungswährung",
+    "LAST_UPTATED_DATE": "Last updated date"
 }

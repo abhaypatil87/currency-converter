@@ -8,8 +8,14 @@
         "OPTIONS": "Options"
     },
     "THEMES": {
-        "THEMES": "Themes"
+        "THEMES": "Themes",
+        "GREEN": "Green",
+        "BLUE": "Blue",
+        "PURPLE": "Purple",
+        "ORANGE": "Orange"
     },
+    "SEARCH_CURRENCIES": "Search Currencies",
     "BASE_CURRENCY": "Base Currency",
-    "QUOTE_CURRENCY": "Quote Currency"
+    "QUOTE_CURRENCY": "Quote Currency",
+    "LAST_UPTATED_DATE": "Last updated date"
 }

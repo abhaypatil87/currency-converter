@@ -1,15 +1,21 @@
 {
-    "APPLICATION_NAME": "Currency Converter",
+    "APPLICATION_NAME": "Převod měn",
     "HOME": {
-        "REVERSE": "Reverse",
-        "HOME": "Home"
+        "REVERSE": "Prohodit",
+        "HOME": "Domů"
     },
     "OPTIONS": {
-        "OPTIONS": "Options"
+        "OPTIONS": "Možnosti"
     },
     "THEMES": {
-        "THEMES": "Themes"
+        "THEMES": "Palety",
+        "GREEN": "Zelený",
+        "BLUE": "Modrý",
+        "PURPLE": "Purpurový",
+        "ORANGE": "Orange"
     },
-    "BASE_CURRENCY": "Base Currency",
-    "QUOTE_CURRENCY": "Quote Currency"
+    "SEARCH_CURRENCIES": "Hledat měny",
+    "BASE_CURRENCY": "Základní měna",
+    "QUOTE_CURRENCY": "Měna nabídky",
+    "LAST_UPTATED_DATE": "Datum poslední aktualizace"
 }
