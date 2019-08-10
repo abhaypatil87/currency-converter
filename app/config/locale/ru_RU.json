@@ -1,0 +1,21 @@
+{
+    "APPLICATION_NAME": "Конвертор валют",
+    "HOME": {
+        "REVERSE": "Обратный курс",
+        "HOME": "Домой"
+    },
+    "OPTIONS": {
+        "OPTIONS": "Настройки"
+    },
+    "THEMES": {
+        "THEMES": "Палитра",
+        "GREEN": "Зелёная",
+        "BLUE": "Синяя",
+        "PURPLE": "Фиолетовая",
+        "ORANGE": "Orange"
+    },
+    "SEARCH_CURRENCIES": "Поиск валюты",
+    "BASE_CURRENCY": "Основная валюта",
+    "QUOTE_CURRENCY": "Валюта котировки",
+    "LAST_UPTATED_DATE": "Дата последнего обновления"
+}

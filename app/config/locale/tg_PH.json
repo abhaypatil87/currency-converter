@@ -1,0 +1,21 @@
+{
+    "APPLICATION_NAME": "Palitan ng Pera",
+    "HOME": {
+        "REVERSE": "Kabaliktaran",
+        "HOME": "Báse"
+    },
+    "OPTIONS": {
+        "OPTIONS": "Mga Opsyon"
+    },
+    "THEMES": {
+        "THEMES": "Mga Tema",
+        "GREEN": "Berde",
+        "BLUE": "Asul",
+        "PURPLE": "Purple",
+        "ORANGE": "Orange"
+    },
+    "SEARCH_CURRENCIES": "pumili ng gustong salapi",
+    "BASE_CURRENCY": "Basehan na Pera",
+    "QUOTE_CURRENCY": "Kapalit na Pera",
+    "LAST_UPTATED_DATE": "Last updated date"
+}

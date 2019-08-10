@@ -30,6 +30,7 @@ Want to contribute? Great! There are a few things in my to-do list for this app,
 ## Localisation
 20190721 - Added expo-localization package with the help of the command 'expo install expo-localization'.
 See more: [expo-localization](https://github.com/expo/expo/blob/master/docs/pages/versions/unversioned/sdk/localization.md)
+20190810 - Added Russian, Polish, Tagalog, Czech language support
 
 ## Location Tracking
 20190728 - This is a try-out feature I thought about. Whenever I am traveling, one of the first things that come to my mind is, _how much does this thing cost in my home currency?_ So I decided to take advantage of this situation and try to implement a solution. The key term here is **Reverse Geocoding**. There are many APIs available online that will take latitude and longitude as an input and give you your location, as in city, province/state, and country. I chose Bing's location APIs as the results are something that are closest to my needs. The only thing I need is the country the user is in right now. So, after I get the country's 2-letter ISO code, I feed that code to yet another public API to get the currency of this country. Once I have this information, I re-render the component feeding this newly obtained currency.
