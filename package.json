@@ -17,7 +17,7 @@
     "expo-localization": "^5.0.1",
     "hoist-non-react-statics": "^3.3.0",
     "i18n-js": "^3.2.1",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "prop-types": "^15.7.2",
     "react": "16.8.3",
     "react-dom": "^16.8.6",
